@@ -7,4 +7,4 @@ jobs:
     steps:
     - name: hello
       run: |
-        echo "this line show special symbols ${{github.repository}}."
+        echo "this line show special symbols "
