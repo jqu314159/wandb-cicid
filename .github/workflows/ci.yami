@@ -9,4 +9,4 @@ jobs:
       run: |
         echo "this line show special symbols ${{github.repository}}."
     - name: this will fail 
-          run: exit 1;
+      run: exit 1;
