@@ -5,7 +5,6 @@ jobs:
   first-job:
     runs-on: ubuntu-latest
     steps:
-			- name: hello
-        run: |
-					pip install pytorch
-		      echo "this line show special symbols ${{github.repository}}."
+    - name: hello
+      run: |
+        echo "this line show special symbols ${{github.repository}}."
