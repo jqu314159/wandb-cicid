@@ -13,5 +13,4 @@ jobs:
       run: |
         pip install -r requirements.txt
         python ci.py
-    - name: this-will-fail 
-      run: exit 1;
+;
