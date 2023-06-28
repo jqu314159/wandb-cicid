@@ -1,0 +1,10 @@
+name: learn-github-actions
+run-name: ${{ github.actor }} is learning GitHub Actions
+on: [push]  # 執行這個 workflow 時
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+    - name: hello
+      run: |
+        echo "this line show special symbols ${{github.repository}}."
