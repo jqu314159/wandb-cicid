@@ -20,4 +20,3 @@ jobs:
       shell: python
       env:
         MY_VAR: ${{ secrets.WANDB_KEY }}
-		
