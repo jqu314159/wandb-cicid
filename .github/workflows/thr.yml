@@ -10,5 +10,3 @@ jobs:
           import os
           print(os.environ['PATH'])
         shell: python
-
-		
