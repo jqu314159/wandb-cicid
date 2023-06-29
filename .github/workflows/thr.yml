@@ -6,9 +6,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: |
-	import os
+        shell: python
+	env: 
+	  MY_VAR: ${{ secrets.WANDB_KEY }}
+        import os
 	print(len(os.getenv('MY_VAR')))
-      shell: python
-      env:
-        MY_VAR: ${{ secrets.WANDB_KEY }}
+
 		
