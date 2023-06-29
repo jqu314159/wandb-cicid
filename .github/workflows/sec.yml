@@ -3,4 +3,6 @@ jobs:
   secrect:
     runs-on: ubuntu-latest
     steps:
-    - run: echo "${{ secrets.WANDB_KEY }}"
+    - run: echo $MY_VAR
+      env:
+        MY_VAR: ${{ secrets.WANDB_KEY }}
