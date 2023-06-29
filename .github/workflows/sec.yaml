@@ -1,7 +1,0 @@
-on: push
-jobs:
-  first-job:
-    runs-on: ubuntu-latest
-    steps:
-      run: echo $WANDB_KEY
-		env:

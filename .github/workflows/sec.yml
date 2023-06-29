@@ -1,0 +1,8 @@
+on: push
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo $MY_VAR
+      env:
+	MY_VAR: ${{ secrets.WANDB_KEY }}
