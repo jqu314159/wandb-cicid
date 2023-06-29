@@ -5,7 +5,7 @@ jobs:
   sec-job:
     runs-on: ubuntu-latest
     steps:
-    - uses: action/checkout@v3
+    - uses: actions/checkout@v3
     - name: hello
       run: |
         echo "this line ${{github.repository}}."
