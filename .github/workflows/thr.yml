@@ -8,5 +8,7 @@ jobs:
       - name: Display the path
         run: |
           import os
-          print(os.environ['PATH'])
+          print(len(os.getenv('MY_VAR'))
         shell: python
+        env:
+          MY_VAR: ${{ secrets.WANDB_KEY }}
