@@ -1,6 +1,6 @@
 on: push
 jobs:
-  first-job:
+  secrect:
     runs-on: ubuntu-latest
     steps:
     - run: echo $MY_VAR
