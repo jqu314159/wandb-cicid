@@ -1,0 +1,18 @@
+name: learn-github-actions
+run-name: ${{ github.actor }} is learning GitHub Actions
+on: 
+  push:
+  pull_request:
+  workflow_dispatch:
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: hello
+      run: |
+        echo "this line ${{github.repository}}."
+    - name: run python code
+      run: |
+        pip install -r requirements.txt
+        python ci.py
