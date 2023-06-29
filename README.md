@@ -1,2 +1,2 @@
 # wandb-cicid
-test xxx
+test xx
