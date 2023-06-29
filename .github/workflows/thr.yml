@@ -5,11 +5,10 @@ jobs:
   gase:
     runs-on: ubuntu-latest
     steps:
-    - run: |
+      - name: Display the path
+        run: |
+          import os
+          print(os.environ['PATH'])
         shell: python
-	env: 
-	  MY_VAR: ${{ secrets.WANDB_KEY }}
-        import os
-	print(len(os.getenv('MY_VAR')))
 
 		
